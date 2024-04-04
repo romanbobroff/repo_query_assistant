@@ -1,0 +1,54 @@
+[project]
+name = "repo_query_assistant"
+version = "2024.0.0"
+requires-python = ">=3.8"
+authors = [
+  {name = "Roman Bobrov", email = "roman.bobroff@gmail.com"},
+  {name = "Valentin Bugakov", email = "valentinbugakov@gmail.com"},
+  {name = "Mikhail Arkhipkin", email = "arkhipkin7@icloud.com"}
+]
+description = "Studying project using large language models to analyze code repositories"
+readme = "README.md"
+keywords = ["llm", "repository", "code analysis"]
+classifiers = [
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Repository = "https://github.com/romanbobroff/repo_query_assistant.git"
+
+[tool.ruff]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+]
+extend-include = ["*.ipynb"]
+line-length = 88
+indent-width = 4
+
+[tool.ruff.format]
+quote-style = "double"
