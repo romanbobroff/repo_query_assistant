@@ -1,0 +1,14 @@
+repos:
+  - repo: https://github.com/romanbobroff/repo_query_assistant
+    rev: dev
+    hooks:
+      - id: ruff
+        name: ruff
+        entry: poetry run ruff
+        language: system
+        types: [python]
+      - id: ruff-format
+        name: ruff-format
+        entry: poetry run ruff format
+        language: system
+        types: [python]

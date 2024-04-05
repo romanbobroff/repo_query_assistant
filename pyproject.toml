@@ -3,9 +3,9 @@ name = "repo-query-assistant"
 version = "0.1.0"
 description = "Studying project using large language models to analyze code repositories"
 authors = [
-  {name = "Roman Bobrov", email = "roman.bobroff@gmail.com"},
-  {name = "Valentin Bugakov", email = "valentinbugakov@gmail.com"},
-  {name = "Mikhail Arkhipkin", email = "arkhipkin7@icloud.com"}
+  "Roman Bobrov <roman.bobroff@gmail.com>",
+  "Valentin Bugakov <valentinbugakov@gmail.com>",
+  "Mikhail Arkhipkin <arkhipkin7@icloud.com>"
 ]
 readme = "README.md"
 
@@ -13,7 +13,7 @@ readme = "README.md"
 python = "^3.11"
 ruff = "^0.3.5"
 openai = "^1.16.2"
-
+pre-commit = "^3.7.0"
 
 [build-system]
 requires = ["poetry-core"]
