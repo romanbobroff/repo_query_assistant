@@ -46,9 +46,37 @@ exclude = [
     "site-packages",
     "venv",
 ]
-extend-include = ["*.ipynb"]
+extend-include = ["src/notebooks/*.ipynb"]
 line-length = 88
 indent-width = 4
 
+[tool.ruff.lint]
+fixable = ["ALL"]
+ignore=[
+    'S101', # Use of assert in pytest
+    'PT006', # Wrong type for pytest mark parametrize
+    'S108', # Omit unsecure usage of tmp/test
+    'SIM117' # Single with statement ommited because dag definition
+]
+
+extend-select = [
+    "N",      # pep8-naming
+   "UP",     # pyupgrade
+   "S",      # bandit
+   "BLE",    # flake8-blind-except
+   "C4",     # comprehensions
+   "DTZ",    # datetimez
+   "FA",     # future-annotations
+   "ISC",    # implicit string concat
+   "PIE",    # flake8-pie
+   "PT",     # flake8-pytest-style
+   "SLF",    # flake8-self
+   "SIM",    # flake8-simplify
+   "ERA",    # eradicate commented out code
+   "ISC"     # implicit str concat
+]
 [tool.ruff.format]
 quote-style = "double"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+docstring-code-format = false
