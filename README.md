@@ -29,6 +29,38 @@ In the `repo_query_assistant` project, we follow a structured methodology to ens
 - **Versioning:** We follow Semantic Versioning (SemVer) for our releases. This approach helps us to track changes and manage version compatibility.
 - **Continuous Integration and Delivery (CI/CD):** Our CI/CD pipelines automate the testing and deployment processes, enabling us to release frequently and with confidence.
 
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+- Docker installed on your machine
+- Git installed on your machine
+
+### Installing and Running with Docker
+
+To set up and run the `repo_query_assistant` project using Docker, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/romanbobroff/repo_query_assistant.git
+   cd repo_query_assistant
+   ```
+   Navigate to the directory containing the Dockerfile (if it's located in a specific subdirectory, adjust the path as necessary):
+    ```
+   cd docker
+   ```
+2. Build the Docker image:
+   ```
+   docker build -t repo_query_assistant .
+   ```
+3. Run the container from the image:
+   ```
+   docker run --name rq_assistant -d repo_query_assistant
+    ```
+
 ## Contribution
 
 We welcome contributions from the community. Please refer to our `CONTRIBUTING.md` file for guidelines on how to contribute to the project.
