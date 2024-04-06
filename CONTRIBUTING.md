@@ -15,9 +15,30 @@ Participation in this project is governed by a Code of Conduct. By participating
 
 ## Development Setup
 
-1. Ensure you have `poetry` installed.
-2. Run `poetry install` to install dependencies.
-3. Make sure to write tests for new code and run tests using `poetry run pytest`.
+Follow these steps to set up your development environment for the `repo_query_assistant` project:
+
+1. Ensure you have `poetry` installed on your system. If you don't have `poetry`, install it by following the instructions on the [Poetry website](https://python-poetry.org/docs/#installation).
+2. Clone the project repository and navigate to the project directory.
+3. Run `poetry install` to install all project dependencies, including the `ruff` linter, as specified in the `pyproject.toml` file.
+4. Write tests for new code and run them using `poetry run pytest` to ensure everything works as expected.
+
+## Using Linters in the Project
+
+### Purpose of Linters
+
+Linters are used in the `repo_query_assistant` project to maintain high code quality, ensure adherence to coding standards, and prevent potential errors. They help in keeping the code clean and improving its readability.
+
+### Linter Used
+
+In this project, we use [ruff](https://ruff.rs/) as our primary linting tool for Python code. `Ruff` is integrated into our development environment via `poetry`, so it gets installed automatically when you run `poetry install`.
+
+### Running the Linter
+
+To lint your code with `ruff`, you can run the following command in the root of your project directory:
+
+```bash
+poetry run ruff .
+```
 
 ## Submitting Changes
 
